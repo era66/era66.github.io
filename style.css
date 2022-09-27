@@ -1,0 +1,32 @@
+a {
+    font-size: 50pt;
+    font-family: futura-pt;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+div {
+    font-size: 100pt;
+    font-style: bold;
+    font-family: futura-pt;
+    font-weight: 800;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+.two {
+    font-size: 100pt;
+    font-style: bold;
+    font-family: futura-pt;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    font-weight: 800;
+}
+
+div:hover {
+    color:black;
+    transition-delay:0.1s;
+}
+
