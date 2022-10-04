@@ -1,0 +1,36 @@
+body {
+    background: black;
+}
+p {
+    font-family: Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 200pt;
+    text-align: center;
+    margin-bottom:0;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.child {
+    grid-row: 2
+}
+.stretch {
+    color: black;
+    -webkit-text-stroke-width: 11px;
+    -webkit-text-stroke-color: white;
+    margin-top: 0%;
+    position: relative;
+    grid-column: 1;
+    grid-row: 3;
+}
+/* span.stretch { */
+    /* display:inline-block; */
+    /* -webkit-transform:scale(1,2); Safari and Chrome */
+    /* -moz-transform:scale(1,2); Firefox */
+    /* -ms-transform:scale(1,2); /* IE 9 */
+    /* -o-transform:scale(1,2); Opera */
+    /* transform:scale(1,2); W3C */
+/* } 
