@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(255, 156, 192);
+    width: 100vw;
+    height: 100vh;
+    overflow-wrap: normal;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: inherit;
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'menu menu main main main main'
+        'footer footer footer footer footer footer';
+    padding: 1.5rem;
+    width: 100%;
+    /* height: 20rem; */
+    border-style: solid;
+    border-width: 2px;
+    border-color: inherit;
+    font-family: futura-pt,'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    color: inherit;
+    font-weight: 700;
+}
+
+
+.container:nth-child(4n) {
+    font-weight: 800;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: inherit;
+    font-size: 2vw;
+    line-height: 95%;
+    padding:1%;
+    grid-area: main;
+    width: inherit
+}
+
+
+.sub {
+    margin-top: 5px;
+    padding: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    text-transform: capitalize;
+    grid-area: footer;
+    width: inherit
+}
+
+.album {
+    width: 140px;
+    height: 140px;
+    grid-area: menu;
+}
+
+.title {
+    display: flex;
+    flex-direction:column;
+    /* height: 20vh; */
+    font-weight: 800;
+    line-height: 100%;
+    font-size: 4vw;
+    font-style: normal;
+    font-family: futura-pt,sans-serif;
+    text-transform: uppercase;
+    color: rgb(67, 91, 1972);
+    background-color: white;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.name {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.container:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+    background-color: whitesmoke;
+    color: rgb(255, 156, 192);
+}
+
+
+.Odd {
+    color: rgb(67, 91, 1972);
+    border-color: rgb(67, 91, 1972);
+    width: 100%;
+    height: 100%;
+    /* overflow: scroll; */
+}
+
+.Odd a:link {
+    color: rgb(67, 91, 1972);
+    text-decoration: none;
+}
+.Odd a:visited {
+    color: rgb(67, 91, 1972);
+}
+
+.Odd a:hover {
+    color: rgb(67, 91, 1972);
+    background-color: rgb(255, 156, 192);
+}
+.Even {
+    background-color: rgb(67, 91, 1972);
+    font-family: trade-gothic-next,'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 156, 192);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    padding:1%;
+    grid-area: main;
+    border-color:  rgb(255, 156, 192);
+    width: 100%;
+    height: 100%;
+    /* overflow: scroll; */
+}
+
+.Even a:link {
+    color: rgb(255, 156, 192);
+    text-decoration: none;
+}
+.Even a:visited {
+    color: rgb(255, 156, 192);
+}
+
+.Even a:hover {
+    color: rgb(67, 91, 1972);
+    background-color: rgb(255, 156, 192);
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
